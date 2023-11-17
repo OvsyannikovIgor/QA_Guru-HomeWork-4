@@ -52,7 +52,8 @@ def test_random_list():
     """
 
     # TODO создайте список
-    l = sorted([randrange(1, 100) for i in range(10)])
+    l = sorted([randrange(1, 101) for i in range(10)])
+    print(l)
     assert len(l) == 10
     assert l[0] < l[-1]  # эта строка проверяет что первое вхождение меньше последнего, а не отсортированность списка
     assert all(l[i] <= l[i+1] for i in range(len(l) - 1)) == True # Немного поискав на просторах интернета нашел как
